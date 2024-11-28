@@ -1,0 +1,51 @@
+* {
+ font-family: "Inv Maison Neue", "Maison Neue", -apple-system, BlinkMacSystemFont, "Open Sans", open-sans, sans-serif;
+}
+
+.header {
+    background-image: url('./assets/Header-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+
+@media screen and (max-width:640px) {
+  .header {
+    background-image: none;
+    background-size: 130vw;
+  }
+}
+
+
+
+input[type="date"].active::-webkit-datetime-edit-text,
+input[type="date"].active::-webkit-datetime-edit-month-field,
+input[type="date"].active::-webkit-datetime-edit-day-field,
+input[type="date"].active::-webkit-datetime-edit-year-field {
+  color: rgb(239,68,68);
+}
+
+.hidden-scroll {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.hidde-scroll::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+@media screen and (min-width:431px) {
+  .hidden-bg {
+    display: none;
+  }
+}
+@media screen and (min-width:640px) {
+  .hidden-invalid {
+    display: none;
+  }
+}
+
+@media screen and (max-width:431px) {
+  .hidden-bg-max {
+    display: none;
+  }
+}
